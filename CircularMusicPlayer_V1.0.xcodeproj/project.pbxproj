@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5CA1B702592119500A7A6EF /* audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5CA1B6F2592119500A7A6EF /* audio.mp3 */; };
 		B5D9A64B2590E61300845C06 /* CircularMusicPlayer_V1_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D9A64A2590E61300845C06 /* CircularMusicPlayer_V1_0App.swift */; };
 		B5D9A64D2590E61300845C06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D9A64C2590E61300845C06 /* ContentView.swift */; };
 		B5D9A64F2590E61500845C06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D9A64E2590E61500845C06 /* Assets.xcassets */; };
 		B5D9A6522590E61500845C06 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D9A6512590E61500845C06 /* Preview Assets.xcassets */; };
+		B5D9A65E2590E6E800845C06 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D9A65D2590E6E800845C06 /* Home.swift */; };
+		B5D9A6622590E70100845C06 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D9A6612590E70100845C06 /* Album.swift */; };
+		B5D9A6652590E71100845C06 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D9A6642590E71100845C06 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5CA1B6F2592119500A7A6EF /* audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio.mp3; sourceTree = "<group>"; };
 		B5D9A6472590E61300845C06 /* CircularMusicPlayer_V1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircularMusicPlayer_V1.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D9A64A2590E61300845C06 /* CircularMusicPlayer_V1_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularMusicPlayer_V1_0App.swift; sourceTree = "<group>"; };
 		B5D9A64C2590E61300845C06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5D9A64E2590E61500845C06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5D9A6512590E61500845C06 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5D9A6532590E61500845C06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5D9A65D2590E6E800845C06 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		B5D9A6612590E70100845C06 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		B5D9A6642590E71100845C06 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 		B5D9A63E2590E61300845C06 = {
 			isa = PBXGroup;
 			children = (
+				B5CA1B6F2592119500A7A6EF /* audio.mp3 */,
 				B5D9A6492590E61300845C06 /* CircularMusicPlayer_V1.0 */,
 				B5D9A6482590E61300845C06 /* Products */,
 			);
@@ -52,6 +61,9 @@
 		B5D9A6492590E61300845C06 /* CircularMusicPlayer_V1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				B5D9A65C2590E6CF00845C06 /* viewModel */,
+				B5D9A65B2590E6C600845C06 /* Model */,
+				B5D9A65A2590E69500845C06 /* View */,
 				B5D9A64A2590E61300845C06 /* CircularMusicPlayer_V1_0App.swift */,
 				B5D9A64C2590E61300845C06 /* ContentView.swift */,
 				B5D9A64E2590E61500845C06 /* Assets.xcassets */,
@@ -67,6 +79,30 @@
 				B5D9A6512590E61500845C06 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5D9A65A2590E69500845C06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5D9A65D2590E6E800845C06 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5D9A65B2590E6C600845C06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5D9A6612590E70100845C06 /* Album.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5D9A65C2590E6CF00845C06 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B5D9A6642590E71100845C06 /* HomeViewModel.swift */,
+			);
+			path = viewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D9A6522590E61500845C06 /* Preview Assets.xcassets in Resources */,
+				B5CA1B702592119500A7A6EF /* audio.mp3 in Resources */,
 				B5D9A64F2590E61500845C06 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +176,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D9A64D2590E61300845C06 /* ContentView.swift in Sources */,
+				B5D9A65E2590E6E800845C06 /* Home.swift in Sources */,
 				B5D9A64B2590E61300845C06 /* CircularMusicPlayer_V1_0App.swift in Sources */,
+				B5D9A6652590E71100845C06 /* HomeViewModel.swift in Sources */,
+				B5D9A6622590E70100845C06 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
